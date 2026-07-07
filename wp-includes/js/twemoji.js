@@ -159,22 +159,22 @@ var twemoji = (function (
        * @example
        *
        *  twemoji.parse("I \u2764\uFE0F emoji!");
-       *  // I <img class="emoji" draggable="false" alt="❤️" src="./assets/2764.gif"/> emoji!
+       *  // I <img class="emoji" draggable="false" alt="❤️" src="/assets/2764.gif"/> emoji!
        *
        *
        *  twemoji.parse("I \u2764\uFE0F emoji!", function(iconId, options) {
-       *    return './assets/' + iconId + '.gif';
+       *    return '/assets/' + iconId + '.gif';
        *  });
-       *  // I <img class="emoji" draggable="false" alt="❤️" src="./assets/2764.gif"/> emoji!
+       *  // I <img class="emoji" draggable="false" alt="❤️" src="/assets/2764.gif"/> emoji!
        *
        *
        * twemoji.parse("I \u2764\uFE0F emoji!", {
        *   size: 72,
        *   callback: function(iconId, options) {
-       *     return './assets/' + options.size + '/' + iconId + options.ext;
+       *     return '/assets/' + options.size + '/' + iconId + options.ext;
        *   }
        * });
-       *  // I <img class="emoji" draggable="false" alt="❤️" src="./assets/72x72/2764.png"/> emoji!
+       *  // I <img class="emoji" draggable="false" alt="❤️" src="/assets/72x72/2764.png"/> emoji!
        *
        */
       parse: parse,

@@ -42302,7 +42302,7 @@ const pagesRoute = {
 
 const pageItemRoute = {
   name: 'page-item',
-  path: './page/:postId',
+  path: '/page/:postId',
   areas: {
     sidebar({
       siteData

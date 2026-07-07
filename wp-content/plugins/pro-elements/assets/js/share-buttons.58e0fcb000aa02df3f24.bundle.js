@@ -84,7 +84,7 @@ var _default = exports["default"] = elementorModules.frontend.handlers.Base.exte
 
     /**
      * The following condition should remain regardless of the share-link dynamic loading.
-     * Ad Blockers may block the share script. (./assets/lib/share-link/share-link.js).
+     * Ad Blockers may block the share script. (/assets/lib/share-link/share-link.js).
      */
     if (!this.elements.$shareButton.shareLink) {
       return;
